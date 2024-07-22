@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        .scroll-div::-webkit-scrollbar,
+        .scroll-div2::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroll-div2 h1 {
+            -webkit-text-stroke: 0.1vh white;
+        }
+
+        @keyframes scroll{
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(calc(100% - 4px));
+            }
+        }
+
+        .scroll-div2 {
+            animation: scroll 2s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="main h-[100vh] w-[100vw] bg-black relative flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1498982261566-1c28c9cf4c02?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vZGVsfGVufDB8fDB8fHww" alt="Model" class="w-[25%] h-[60%] relative z-[99]">
+        <div class="text uppercase font-extrabold text-[2vh] absolute w-[60%] z-[999] text-center top-[30%]">
+            <h1>Hello everyone, this is Soumo</h1>
+        </div>
+        <div class="scroll-div absolute top-[20%] w-full whitespace-nowrap overflow-hidden">
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+        </div>
+        <div class="scroll-div2 absolute top-[40%] w-full whitespace-nowrap overflow-hidden z-[99]">
+            <h1 class="inline-block text-transparent font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-transparent font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-transparent font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-transparent font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+        </div>
+        <div class="scroll-div absolute top-[60%] w-full whitespace-nowrap overflow-hidden">
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+            <h1 class="inline-block text-white font-sans text-[6vw] tracking-[0.1vh] font-extrabold mr-[3vw] uppercase">Brand</h1>
+        </div>
+    </div>
+</body>
+</html>
